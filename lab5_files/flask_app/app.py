@@ -16,7 +16,6 @@ conn = mysql.connector.connect(
 @app.route("/")
 def home():
     count = r.incr("hits")
-    return f"This page has been visited {count} times."
 
     cursor = conn.cursor()
     cursor.execute("CREATE TABLE IF NOT EXISTS visit_count (count INT)")
