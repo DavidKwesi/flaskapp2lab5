@@ -8,10 +8,10 @@ r = redis.Redis(host="redis", port=6379)
 mysql_url = os.getenv('MYSQL_URL')
 conn = mysql.connector.connect(
     host="mysql",
-    user="root",
-    password=" ",
-    database="dbforlab"
-)
+    user="mysql_user",
+    password="mysql_password",
+    database="mydatabase"
+) 
 
 @app.route("/")
 def home():
