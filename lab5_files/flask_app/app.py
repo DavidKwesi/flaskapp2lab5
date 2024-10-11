@@ -23,7 +23,6 @@ def home():
     conn.commit()
     cursor.close()
 
-    return f'Hello! You have visited {count} times. Data is stored in both Redis and MySQL.'
 
 
 if __name__ == "__main__":
