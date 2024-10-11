@@ -15,12 +15,12 @@ services:
         ports:
             - "6379:6379"
 
-    mysql:
-    image: "mysql:latest"
-    environment:
-      MYSQL_DATABASE: dbforlab
-      MYSQL_USER: root
-      MYSQL_PASSWORD:  
-      MYSQL_ROOT_PASSWORD:  
-    ports:
-      - "3306:3306"
+  mysql:
+  image: "mysql:latest"
+  environment:
+    MYSQL_DATABASE: mydatabase
+    MYSQL_USER: mysql_user
+    MYSQL_PASSWORD: mysql_password
+    MYSQL_ROOT_PASSWORD: root_password
+  ports:
+    - "3306:3306"
